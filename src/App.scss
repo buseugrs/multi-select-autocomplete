@@ -1,16 +1,20 @@
 $gray-color: rgb(143, 142, 142);
+$bg-body: rgb(237, 240, 240);
 $scrollbar-track-color: rgb(250, 250, 239);
 $scrollbar-thumb-color: rgb(204, 201, 201);
 * {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
-  font-family: "Roboto", sans-serif;
+  font-family: 'Roboto', sans-serif;
 }
+
+body {
+  background-color: $bg-body;
+}
+
 .search-section {
   height: 100vh;
-  width: 30vw;
-  margin: 0 auto;
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -19,53 +23,21 @@ $scrollbar-thumb-color: rgb(204, 201, 201);
 }
 
 .search-box {
-  width: 100%;
-}
-
-.search-box input {
-  border: 1px solid $gray-color;
-  height: 30px;
-  border-radius: 10px;
-  width: 100%;
-}
-.character-container {
-  display: flex;
-  flex-direction: column;
-  border: 1px solid $gray-color;
-  border-bottom: none;
-  width: 100%;
-  border-radius: 10px;
-  max-height: 400px;
-  overflow-y: auto;
+  width: 500px;
 }
 
 .character-item {
-  display: flex;
-  height: 60px;
-  gap: 0 0.5rem;
-  border-bottom: 1px solid $gray-color;
-  padding: 0.5rem;
+  border: 1px solid $gray-color;
 }
 
 .character {
   display: flex;
-  width: 100%;
-  align-items: center;
-  gap: 0 0.5rem;
+  gap: 0 0.6rem;
 }
-
-.character-item img {
+.character-img {
   width: 40px;
   height: 40px;
   border-radius: 25%;
-}
-
-.character-info {
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  gap: 0.2rem 0;
-  height: 100%;
 }
 
 .episode {
@@ -73,29 +45,22 @@ $scrollbar-thumb-color: rgb(204, 201, 201);
   color: $gray-color;
 }
 
-.highlight{
-  color: rgb(65, 64, 64);
-  font-weight: 900;
-}
-
-/* width */
+// Scrollbar CSS
 ::-webkit-scrollbar {
   width: 20px;
 }
 
-/* Track */
 ::-webkit-scrollbar-track {
   background: $scrollbar-track-color;
+  border-radius: 10px;
 }
- 
-/* Handle */
+
 ::-webkit-scrollbar-thumb {
   background: $scrollbar-thumb-color;
   border-radius: 50px;
   border: 5px solid $scrollbar-track-color;
 }
 
-/* Handle on hover */
 ::-webkit-scrollbar-thumb:hover {
-  background: #555; 
+  background: #555;
 }
