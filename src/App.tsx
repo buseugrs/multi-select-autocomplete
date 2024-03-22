@@ -1,4 +1,4 @@
-import './App.css';
+import './App.scss';
 import SearchCharacter from './components/search-character/SearchCharacter';
 
 function App() {
