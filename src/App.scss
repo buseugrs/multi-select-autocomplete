@@ -2,6 +2,7 @@ $gray-color: rgb(143, 142, 142);
 $bg-body: rgb(237, 240, 240);
 $scrollbar-track-color: rgb(250, 250, 239);
 $scrollbar-thumb-color: rgb(204, 201, 201);
+
 * {
   margin: 0;
   padding: 0;
@@ -20,29 +21,30 @@ body {
   align-items: center;
   gap: 0.5rem 0;
   padding: 2rem 0;
-}
 
-.search-box {
-  width: 500px;
+  .search-box {
+    width: 500px;
+  }
 }
 
 .character-item {
   border: 1px solid $gray-color;
-}
 
-.character {
-  display: flex;
-  gap: 0 0.6rem;
-}
-.character-img {
-  width: 40px;
-  height: 40px;
-  border-radius: 25%;
-}
+  .character {
+    display: flex;
+    gap: 0 0.6rem;
 
-.episode {
-  font-size: 0.9rem;
-  color: $gray-color;
+    img {
+      width: 40px;
+      height: 40px;
+      border-radius: 25%;
+    }
+
+    .episode {
+      font-size: 0.9rem;
+      color: $gray-color;
+    }
+  }
 }
 
 // Scrollbar CSS
