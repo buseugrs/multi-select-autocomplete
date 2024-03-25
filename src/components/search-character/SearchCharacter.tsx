@@ -18,6 +18,7 @@ interface CharactersData {
   };
 }
 
+// GraphQL query to fetch characters
 const GET_CHARACTERS = gql`
   query GetCharacters($name: String!) {
     characters(filter: { name: $name }) {
@@ -34,13 +35,15 @@ const GET_CHARACTERS = gql`
 `;
 
 const SearchCharacter: React.FC = () => {
-  const [searchTerm, setSearchTerm] = useState('');
+  // State to store selected options
   const [selectedOptions, setSelectedOptions] = useState<Character[]>([]);
 
+  // Fetch data using Apollo useQuery hook
   const { loading, data } = useQuery<CharactersData>(GET_CHARACTERS, {
-    variables: { name: searchTerm },
+    variables: { name: '' },
   });
 
+  // Function to handle checkbox change
   const handleCheckboxChange = (event: React.ChangeEvent<HTMLInputElement>, character: Character) => {
     if (event.target.checked) {
       setSelectedOptions([...selectedOptions, character]);
@@ -58,14 +61,17 @@ const SearchCharacter: React.FC = () => {
         options={data?.characters.results || []}
         disableCloseOnSelect
         getOptionLabel={(option: Character) => option.name}
-        defaultValue={[]}
+        value={selectedOptions}
+        onChange={(event: React.ChangeEvent<{}>, newValue: Character[] | null) => {
+          setSelectedOptions(newValue || []);
+        }}
         renderInput={(params) => (
           <TextField
             {...params}
-            placeholder=' Select Character...'
+            placeholder='Select Character...'
             InputProps={{
               ...params.InputProps,
-              style: { borderRadius: '20px' }, // Border radius tanımı
+              style: { borderRadius: '20px' },
               endAdornment: (
                 <>
                   {loading ? <CircularProgress color='inherit' size={20} /> : null}
@@ -75,7 +81,7 @@ const SearchCharacter: React.FC = () => {
             }}
           />
         )}
-        renderOption={(props, option, { inputValue }) => {
+        renderOption={(props, option: Character, { inputValue }) => {
           const matches = match(option.name, inputValue, { insideWords: true });
           const parts = parse(option.name, matches);
 
