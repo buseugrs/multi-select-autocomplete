@@ -1,46 +1,49 @@
-# Getting Started with Create React App
+<h1 align="center" id="title">React Multi-Select Autocomplete Component with Rick and Morty API</h1>
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+<p align="center"><img src="https://socialify.git.ci/buseugrs/multi-select-autocomplete/image?language=1&amp;name=1&amp;owner=1&amp;pattern=Circuit%20Board&amp;theme=Light" alt="project-image"></p>
 
-## Available Scripts
+<p id="description">This project includes a multi-select autocomplete component developed using Typescript and GraphQL. This project includes a multi-select autocomplete component developed using Typescript and GraphQL. The component is designed to search select and delete characters using the Rick and Morty API.</p>
 
-In the project directory, you can run:
+<p align="center"><img src="https://img.shields.io/badge/VSCode-%23007ACC?logo=visualstudiocode&amp;logoColor=%23007ACC&amp;labelColor=white" alt="shields"> <img src="https://img.shields.io/badge/React-%2361DAFB?logo=react&amp;logoColor=%2361DAFB&amp;labelColor=white" alt="shields"> <img src="https://img.shields.io/badge/TypeScript-%233178C6?logo=typescript&amp;logoColor=%233178C6&amp;labelColor=white" alt="shields"> <img src="https://img.shields.io/badge/GraphQL-%23E10098?logo=graphql&amp;logoColor=%23E10098&amp;labelColor=white" alt="shields"></p>
 
-### `npm start`
+<h2>🚀 Demo</h2>
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in the browser.
+<a href="https://ip-address-tracker-psi-beige.vercel.app/" target="_blank" rel="noreferrer"> Multi-Select Autocomplete Component </a>
 
-The page will reload if you make edits.\
-You will also see any lint errors in the console.
+<h2>Project Screenshots:</h2>
 
-### `npm test`
+| Desktop | Tablet | Mobile |
+| :---: | :---: | :---: |
+| <img src="https://private-user-images.githubusercontent.com/112654875/310485963-fe62ca50-3db1-4747-9aef-7cb0823211dc.png?jwt=eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJnaXRodWIuY29tIiwiYXVkIjoicmF3LmdpdGh1YnVzZXJjb250ZW50LmNvbSIsImtleSI6ImtleTUiLCJleHAiOjE3MDk3MjY4ODMsIm5iZiI6MTcwOTcyNjU4MywicGF0aCI6Ii8xMTI2NTQ4NzUvMzEwNDg1OTYzLWZlNjJjYTUwLTNkYjEtNDc0Ny05YWVmLTdjYjA4MjMyMTFkYy5wbmc_WC1BbXotQWxnb3JpdGhtPUFXUzQtSE1BQy1TSEEyNTYmWC1BbXotQ3JlZGVudGlhbD1BS0lBVkNPRFlMU0E1M1BRSzRaQSUyRjIwMjQwMzA2JTJGdXMtZWFzdC0xJTJGczMlMkZhd3M0X3JlcXVlc3QmWC1BbXotRGF0ZT0yMDI0MDMwNlQxMjAzMDNaJlgtQW16LUV4cGlyZXM9MzAwJlgtQW16LVNpZ25hdHVyZT1kMTczOWU5MGMwNTQyM2JjYzFlMjg4ZjZiMDJmZWQ3ZjlkZWM4ODg0ZjcwOTZmZjlmOTgyMmU5YmJlZTg5MjBjJlgtQW16LVNpZ25lZEhlYWRlcnM9aG9zdCZhY3Rvcl9pZD0wJmtleV9pZD0wJnJlcG9faWQ9MCJ9.qNqq3aApMqH-VrwNcD1tbPp51gjThCdFw0FoddIgsYc">| <img src="https://private-user-images.githubusercontent.com/112654875/310485971-fbc60bcb-6541-49a5-a544-d23a5840b307.png?jwt=eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJnaXRodWIuY29tIiwiYXVkIjoicmF3LmdpdGh1YnVzZXJjb250ZW50LmNvbSIsImtleSI6ImtleTUiLCJleHAiOjE3MDk3MjY4ODMsIm5iZiI6MTcwOTcyNjU4MywicGF0aCI6Ii8xMTI2NTQ4NzUvMzEwNDg1OTcxLWZiYzYwYmNiLTY1NDEtNDlhNS1hNTQ0LWQyM2E1ODQwYjMwNy5wbmc_WC1BbXotQWxnb3JpdGhtPUFXUzQtSE1BQy1TSEEyNTYmWC1BbXotQ3JlZGVudGlhbD1BS0lBVkNPRFlMU0E1M1BRSzRaQSUyRjIwMjQwMzA2JTJGdXMtZWFzdC0xJTJGczMlMkZhd3M0X3JlcXVlc3QmWC1BbXotRGF0ZT0yMDI0MDMwNlQxMjAzMDNaJlgtQW16LUV4cGlyZXM9MzAwJlgtQW16LVNpZ25hdHVyZT1iMGQwM2FhNmUxMjdjMjhmZmRiOWYxN2JjMmIzNWQ2YzU0N2U3YWJjOWQyNTNiZTU4MGQwNTcwNzUwNzc2ZmMwJlgtQW16LVNpZ25lZEhlYWRlcnM9aG9zdCZhY3Rvcl9pZD0wJmtleV9pZD0wJnJlcG9faWQ9MCJ9.E3TSTqyh5HLGZmghHstXqzOKFeG9-1YU05cBAN7YnZQ">| <img src="https://private-user-images.githubusercontent.com/112654875/310485956-4503fced-daef-419a-8ce7-222f8c274389.png?jwt=eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJnaXRodWIuY29tIiwiYXVkIjoicmF3LmdpdGh1YnVzZXJjb250ZW50LmNvbSIsImtleSI6ImtleTUiLCJleHAiOjE3MDk3MjY4ODMsIm5iZiI6MTcwOTcyNjU4MywicGF0aCI6Ii8xMTI2NTQ4NzUvMzEwNDg1OTU2LTQ1MDNmY2VkLWRhZWYtNDE5YS04Y2U3LTIyMmY4YzI3NDM4OS5wbmc_WC1BbXotQWxnb3JpdGhtPUFXUzQtSE1BQy1TSEEyNTYmWC1BbXotQ3JlZGVudGlhbD1BS0lBVkNPRFlMU0E1M1BRSzRaQSUyRjIwMjQwMzA2JTJGdXMtZWFzdC0xJTJGczMlMkZhd3M0X3JlcXVlc3QmWC1BbXotRGF0ZT0yMDI0MDMwNlQxMjAzMDNaJlgtQW16LUV4cGlyZXM9MzAwJlgtQW16LVNpZ25hdHVyZT05OTc5MWIwOTkxZDBmY2ZkMTM2NGFhNjhjOGJiMzNlZGJiZGMzMmU0ZmNhMzU2YmY1NjY5YmZiNjg2MDJhMDZkJlgtQW16LVNpZ25lZEhlYWRlcnM9aG9zdCZhY3Rvcl9pZD0wJmtleV9pZD0wJnJlcG9faWQ9MCJ9.9mqvNUx3-qL2Iv3xFNh748I6J3mn-2qvADHwouywuOQ">|
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+<h2>🧐 Features</h2>
 
-### `npm run build`
+Here're some of the project's best features:
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+*  Multi-select autocomplete component.
+*  Making an API query with the query written in the input field and listing the results in a popup.
+*  The listed results show the character picture, name and information about how many episodes were played in for each character.
+*  Highlighting the word typed for query in the listed results.
+*  Adding and subtracting the selected results to the input field.
+*  Loading state display.
+*  Keyboard navigation.
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+<h2>🛠️ Installation Steps:</h2>
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+<p>1. Clone the repository</p>
 
-### `npm run eject`
+```
+git clone https://github.com/buseugrs/ip-address-tracker.git
+```
 
-**Note: this is a one-way operation. Once you `eject`, you can’t go back!**
+<p>2. Install npm modules</p>
 
-If you aren’t satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
+```
+npm install
+```
 
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you’re on your own.
+<p>3. Start development server using below command</p>
 
-You don’t have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn’t feel obligated to use this feature. However we understand that this tool wouldn’t be useful if you couldn’t customize it when you are ready for it.
-
-## Learn More
-
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
-
-To learn React, check out the [React documentation](https://reactjs.org/).
+```
+npm start
+```
