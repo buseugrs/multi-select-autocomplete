@@ -2,7 +2,7 @@
 
 <p align="center"><img src="https://socialify.git.ci/buseugrs/multi-select-autocomplete/image?language=1&amp;name=1&amp;owner=1&amp;pattern=Circuit%20Board&amp;theme=Light" alt="project-image"></p>
 
-<p id="description">This project includes a multi-select autocomplete component developed using Typescript and GraphQL. This project includes a multi-select autocomplete component developed using Typescript and GraphQL. The component is designed to search select and delete characters using the Rick and Morty API.</p>
+<p id="description">This project includes a multi-select autocomplete component developed using Typescript and GraphQL. The component is designed to search select and delete characters using the Rick and Morty API.</p>
 
 <p align="center"><img src="https://img.shields.io/badge/VSCode-%23007ACC?logo=visualstudiocode&amp;logoColor=%23007ACC&amp;labelColor=white" alt="shields"> <img src="https://img.shields.io/badge/React-%2361DAFB?logo=react&amp;logoColor=%2361DAFB&amp;labelColor=white" alt="shields"> <img src="https://img.shields.io/badge/TypeScript-%233178C6?logo=typescript&amp;logoColor=%233178C6&amp;labelColor=white" alt="shields"> <img src="https://img.shields.io/badge/GraphQL-%23E10098?logo=graphql&amp;logoColor=%23E10098&amp;labelColor=white" alt="shields"></p>
 
