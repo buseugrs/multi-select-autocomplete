@@ -8,7 +8,7 @@
 
 <h2>🚀 Demo</h2>
 
-<a href="https://ip-address-tracker-psi-beige.vercel.app/" target="_blank" rel="noreferrer"> Multi-Select Autocomplete Component </a>
+<a href="https://multi-select-autocomplete-flame.vercel.app/" target="_blank" rel="noreferrer"> Multi-Select Autocomplete Component </a>
 
 <h2>Project Screenshots:</h2>
 
