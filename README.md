@@ -31,7 +31,7 @@ Here're some of the project's best features:
 <p>1. Clone the repository</p>
 
 ```
-git clone https://github.com/buseugrs/ip-address-tracker.git
+git clone https://github.com/buseugrs/multi-select-autocomplete.git
 ```
 
 <p>2. Install npm modules</p>
