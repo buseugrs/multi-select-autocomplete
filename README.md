@@ -8,7 +8,7 @@
 
 <h2>🚀 Demo</h2>
 
-<a href="https://multi-select-autocomplete-flame.vercel.app/" target="_blank" rel="noreferrer"> Multi-Select Autocomplete Component </a>
+<a href="https://multi-select-autocomplet-8a30a.web.app/" target="_blank" rel="noreferrer"> Multi-Select Autocomplete Component </a>
 
 <h2>Project Screenshots:</h2>
 
